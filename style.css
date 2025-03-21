@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+}
+
+#game-container {
+    position: relative;
+    width: 95vw;
+    height: 90vh;
+    top: 5vh;
+    margin: 0 auto;
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgba(13, 15, 13, 0.466);
+    background-color: rgb(31, 123, 204);
+    background-size: cover;
+}
+
+#pump-container {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+#pump-body {
+    position: relative;
+    width: 100px;
+    height: 120px; 
+    z-index: 2; 
+}
+
+#pump-handle {
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    
+}
+
+#pump-fill {
+    width: 30px;
+    position: absolute;
+    right: 75px;
+    top: 30px;
+}
+
+
+.cloud {
+    position: absolute;
+    width: 80px;
+    opacity: 0.8;
+}
+
+
+.balloon {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+
+.letter {
+    width: 50px;
+    height: 70px;
+}
+
